@@ -94,10 +94,10 @@ final class HoneypotFormExtension extends AbstractTypeExtension
         }
 
         $formView = $factory
-            ->createNamed($options[antispam_honeypot_field], TextType::class, null, $formOptions)
+            ->createNamed($options['antispam_honeypot_field'], TextType::class, null, $formOptions)
             ->createView($view);
 
-        $view->children[$options[antispam_honeypot_field]] = $formView;
+        $view->children[$options['antispam_honeypot_field']] = $formView;
     }
 
     /**
